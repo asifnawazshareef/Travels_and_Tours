@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var body = document.body;
+            body.classList.add("transparent-header-page");
+        });
+    </script>
+    <title>TK International Travels & Tours</title>
+</head>
+
+<body>
+    <div class="header_menu">
+        <div class="site_container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <nav class="main_ul">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Hajj-&-Umrah.html">Hajj & Umrah</a></li>
+                    <li><a href="./holidays.html">Holidays</a></li>
+                    <li><a href="./services.html">Other Services</a></li>
+                    <li><a href="./ticketing.html">Ticketing</a></li>
+                    <li><a href="./visa services.html">Visa Service</a></li>
+                    <li><a href="./contact_us.html">Contact Us</a></li>
+                </ul>
+                <div class="log_in box">
+                    <a class="button" href="#popup1">Log In</a>
+                </div>
+            </nav>
+            <div class="icon_burger">
+                <span> <a href="#"><i class="fa-solid fa-bars"></i></a></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Log In</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <form action="/action_page.php">
+                            <label for="fname"> Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Email </label>
+                            <input type="email" id="email" name="email" placeholder="Your email..">
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hero_banner">
+        <div class="site_container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="hero_banner_top">
+                            <div class="hero_banner_imge">
+                                <img class="d-block w-100" src="images/sj_episode_hajj.jpg" alt="First slide">
+                                <div class="hero_overlay"></div>
+                            </div>
+                            <div class="hero_banner_content">
+                                <h3 class="animate__animated animate__slideInDown">Hajj and Umrah</h3>
+                                <p class="animate__animated animate__slideInDown">Hassle-free Hajj and Umrah Booking
+                                    Services</p>
+                                <div class="booking_btn animate__animated animate__slideInDown ">
+                                    <a href="/Hajj-&-Umrah.html">Booking</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero_banner_top">
+                            <div class="hero_banner_imge">
+                                <img class="d-block w-100" src="images/d5aoutx-2d8a82c0-b874-4e85-b396-7b700edf0a65.jpg"
+                                    alt="First slide">
+                                <div class="hero_overlay"></div>
+                            </div>
+                            <div class="hero_banner_content">
+                                <h3 class="animate__animated animate__slideInRight">Makha Hotel Reservation</h3>
+                                <p class="animate__animated animate__slideInRight">Your Serene Haven Awaits: Makha Hotel
+                                    Reservation Now Open!</p>
+                                <div class="booking_btn animate__animated animate__slideInRight">
+                                    <a href="/Hajj-&-Umrah.html">Booking</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero_banner_top">
+                            <div class="hero_banner_imge">
+                                <img class="d-block w-100" src="images/photo-1591604129939-f1efa4d9f7fa.jfif"
+                                    alt="First slide">
+                                <div class="hero_overlay"></div>
+                            </div>
+                            <div class="hero_banner_content">
+                                <h3 class="animate__animated animate__slideInUp">Madina Hotel Reservation</h3>
+                                <p class="animate__animated animate__slideInUp">Your Serene Haven Awaits: Madina Hotel
+                                    Reservation Now Open!
+                                </p>
+                                <div class="booking_btn animate__animated animate__slideInUp">
+                                    <a href="/Hajj-&-Umrah.html">Booking</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero_banner_top">
+                            <div class="hero_banner_imge">
+                                <img class="d-block w-100" src="images/mosque-4525144__340.jpg" alt="First slide">
+                                <div class="hero_overlay"></div>
+                            </div>
+                            <div class="hero_banner_content">
+                                <h3 class="animate__animated animate__slideInUp">Holy Places </h3>
+                                <p class="animate__animated animate__slideInUp">Unlock the Mystique of Holy Places -
+                                    Reserve Your Divine Journey
+                                </p>
+                                <div class="booking_btn animate__animated animate__slideInUp">
+                                    <a href="#">Booking</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="site_container">
+            <div class="content">
+                <div class="left_image">
+                    <img data-aos="fade-up" data-aos-duration="1000" src="images/logo.png" alt="">
+                </div>
+                <div class="right_text">
+                    <h2 data-aos="fade-left" data-aos-duration="1000">About US</h2>
+                    <p data-aos="fade-left" data-aos-duration="1000">T.K International Travels & Tours (TKITT) is a
+                        leading and fast growing company based
+                        in Islamabad, Pakistan. Since its inception in 2012, TKITT has expanded its business
+                        tentacles around and beyond the shore of Pakistan.It has remained committed and
+                        dedicated to providing reasonable, affordable, comfortable, satisfactory, customers'
+                        oriented service under the leadership of Mr Tilal Khan and his experienced and
+                        professional team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" airl_lines">
+        <div class="site_container">
+            <h2>Air Lines</h2>
+            <div class="airl_lines_inner">
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/turkish_airline.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/PIA_airline.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/air_blue_airline.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/kuwait_ailine.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/qatar_airline.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/serene_airline.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/saudia_airline.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/gulf_airline.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/emirates_airline.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="airl_lines_colss">
+                        <div class="Slider_images">
+                            <img src="images/etihad_airline.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="packages">
+        <div class="site_container">
+            <h2>Our Packages</h2>
+            <div class="cards">
+                <div class="card">
+                    <a href="#">
+                        <div class="card_image">
+                            <img src="images/umrah-banner (1).jpg" alt="">
+                        </div>
+                        <div class="card_body">
+                            <h3> Hajj Package </h3>
+                            <h4>PKR &nbsp; 1 Million &nbsp; <del>PKR 1.2 Million</del></h4>
+                            <p>Duration:<span>20 Days</span></p>
+                            <p>Depature:<span>Flexible</span></p>
+                            <p>Included:<span> Transport, Accommodation, food, Tour Guide</span></p>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="card">
+                    <a href="#">
+                        <div class="card_image">
+                            <img src="images/7c6e32ec690cf4e2b5116b2255b5a4ce.jpg" alt="">
+                        </div>
+                        <div class="card_body">
+                            <h3> Umrah Package</h3>
+                            <h4>PKR 1,80000 <del>PKR 2,00000</del></h4>
+                            <p>Duration:<span>3 Days</span></p>
+                            <p>Depature:<span>Flexible</span></p>
+                            <p>Included:<span> Transport, Accommodation, food, Tour Guide</span></p>
+                        </div>
+                    </a>
+                </div> -->
+                <div class="card">
+                    <a href="#">
+                        <div class="card_image">
+                            <img src="images/minbar_nabawi_11045.jpg" alt="">
+                        </div>
+                        <div class="card_body">
+                            <h3> Visit to Masjid e Nabvi </h3>
+                            <h4>PKR 2,05000 <del>PKR 3,00000</del></h4>
+                            <p>Duration:<span>14 Days</span></p>
+                            <p>Depature:<span>Flexible</span></p>
+                            <p>Included:<span> Accommodation, Conveyance, Tour Guide</span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="get">
+        <div class="site_container">
+            <div class="text">
+                <h2>Best Umrah Packages 2024</h2>
+            </div>
+            <div class="content">
+                <div class="left-image">
+                    <img data-aos="slide-right" data-aos-duration="1000" src="images/umrah-banner (1).jpg" alt="">
+                </div>
+                <div class="right-text">
+                    <ul class="list">
+                        <li data-aos="slide-up" data-aos-duration="1000"><a href="#"> 14 Days Umrah Package
+                                <br><span>Rs: 2,05000</span></a> </li>
+
+                        <li data-aos="slide-up" data-aos-duration="2000"> <a href="#">20 Days Umrah Package
+                                <br><span>Rs: 2,15000</span></a></li>
+                        <li data-aos="slide-up" data-aos-duration="2000"><a href="#">28 Days
+                                Umrah Package <br><span>Rs: 2,30000</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section about">
+        <div class="site_container">
+            <div class="content">
+                <div class="right_text">
+                    <h2 data-aos="fade-left" data-aos-duration="1000">CEO Message</h2>
+                    <p data-aos="fade-left" data-aos-duration="1000">T.K International Travels & Tours Private Limited
+                        is a tested
+                        and trusted agency founded to serve the needs of travellers,
+                        which include but not limited to recreational, educational,
+                        business or professional, medical, and religious travelling
+                        needs. We offer complete (domestic and international) travel
+                        solutions to individuals and corporate travellers. We assure you
+                        of the best and affordable Hajj &Umrah services and other
+                        forms of holiday packages.
+                    </p>
+                    <p data-aos="fade-left" data-aos-duration="1000">Our operations are designed and customised to serve
+                        the requirements of our clients and
+                        customers.Over the years, we have developed considerable specialty in the provision of
+                        what we called “always make your customer happy” andour primary services of ticketing
+                        and hotel booking have developed and grown exponentially. Today, we have not only
+                        marked an undisputable niche in the local industry of Pakistan, we have also extended
+                        our business tentacles beyond the shore of Pakistan, into providing competitive services
+                        in the international market.</p>
+                    <p data-aos="fade-left" data-aos-duration="1000">We believe in business development, professionalism
+                        and development of personnel, as
+                        necessary tools to serve and compete in the ever growing competitive global market.
+                        Besides, we are also cognizant of the necessity of international partnership and
+                        integrated technologies which are requirements for any service provider. T.K
+                        International Travels optimises on these as instruments to better serve our domestic and
+                        international clients on a timely basis. We deliver best of services to all our clients and we
+                        are working day and night to further increase the level of satisfaction of our customers,
+                        which is our responsibility and prime goal. </p>
+                </div>
+                <div class="left_image">
+                    <img data-aos="fade-up" data-aos-duration="1000" src="images/CEO_profile.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="site_container">
+            <div class="text">
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="content">
+                <div class="left-text">
+                    <form>
+                        <label for="fname"> Name</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="fname">Email</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="fname">phone</label>
+                        <input type="text" id="fname" name="fname">
+                    </form>
+                </div>
+                <div class="right-text">
+                    <form>
+                        <label for="fname"> Message our team</label>
+                        <textarea name="comment" rows="12" cols="35"></textarea>
+                        <input type="submit" id="mese" placeholder="submit" name="text">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="site_container">
+            <div class="content">
+                <div class="inner_content">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel: 051-4938241"><i class="fa fa-solid  fa-fax"></i>+92 (0)51-4938241</a></li>
+                        <li><a href="tel: 051-4938242"><i class="fa fa-solid  fa-fax"> </i>+92 (0)51-4938242</a></li>
+                        <li><a href="tel: +92300-9055123"><i class="fa fa-solid fa-phone"> </i>+92 (0)300-9055123</a>
+                        </li>
+                        <li><a href="tel: +92310-5012086"><i class="fa fa-solid fa-phone"> </i>+92 (0)310-5012086</a>
+                        </li>
+                        <li><a href="mailto: tktravels07@gmail.com" class="email"><i
+                                    class="fa fa-solid fa-envelope"></i>tktravels07@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="inner_content">
+                    <h3>COUSTOMIZE TOURS</h3>
+                    <ul>
+                        <li><a href="./holidays.html"><i class="fa-solid fa-angle-right"></i>HONEYMOON TOURS</a></li>
+                        <li><a href="./holidays.html"><i class="fa-solid fa-angle-right"></i>FAMILY TOURS</a></li>
+                        <li><a href="./holidays.html"><i class="fa-solid fa-angle-right"></i>COLLEGE TRIPS</a></li>
+                        <li><a href="./holidays.html"><i class="fa-solid fa-angle-right"></i>FOREIGNER TOURS</a></li>
+                        <li><a href="./holidays.html"><i class="fa-solid fa-angle-right"> </i>COREPORATE TOURS</a></li>
+                        <li><a href="./holidays.html"><i class="fa-solid fa-angle-right"> </i>ACTIVITIES</a></li>
+                    </ul>
+                </div>
+                <div class="inner_content">
+                    <h3>Our Menu</h3>
+                    <ul>
+                        <li><a href="./Hajj-&-Umrah.html"><i class="fa-solid fa-angle-right"></i>Hajj & Umrah</a></li>
+                        <li><a href="./holidays.html"><i class="fa-solid fa-angle-right"></i>Holidays</a></li>
+                        <li><a href="./services.html"><i class="fa-solid fa-angle-right"></i>Other Services</a></li>
+                        <li><a href="./ticketing.html"><i class="fa-solid fa-angle-right"></i>Ticketing</a></li>
+                        <li><a href="./visa services.html"><i class="fa-solid fa-angle-right"></i>Visa Service</a></li>
+                        <li><a href="./contact_us.html"><i class="fa-solid fa-angle-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="inner_content">
+                    <h3>LOCATION</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13282.50824659953!2d73.0744989!3d33.6668239!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95a47ff75a7d%3A0xca8fe0813d4e3407!2sT.K%20INTERNATIONAL%20Travels%20%26%20Tours%20Private%20Limited!5e0!3m2!1sen!2s!4v1691069553166!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(".icon_burger").click(function () {
+            $(".main_ul").toggleClass("main_ul_show");
+            $(this).toggleClass("icon_burger_mbl");
+        });
+    });
+    $(document).on('ready', function () {
+        $('.airl_lines_inner').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
